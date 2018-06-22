@@ -1,0 +1,229 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.DirectoriesFragments.DirectoriesCategoryPlacesFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutMain_DirectoriesCategoryPlacesFrg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:background="@color/colorMyGray_1"
+            android:layout_marginBottom="1sp">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_DirectoriesCategoryPlacesFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <TextView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/stared_places"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="7sp"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btnStar_DirectoriesCategoryPlacesFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:background="@color/colorMyGray_1"
+                    android:gravity="center"
+                    android:text="@string/fa_star"
+                    android:textColor="@color/colorMyGray_9"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:background="@color/colorMyGray_9"
+                    android:paddingTop="1px"
+                    android:paddingBottom="1px"
+                    android:layout_marginBottom="1sp">
+
+                    <LinearLayout
+                        android:id="@+id/layoutFirstMenuButton_DirectoriesCategoryPlacesFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyWhite"
+                        android:layout_marginRight="1px"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="40sp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="center"
+                            android:text="@string/fa_align_justify"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="center"
+                            android:text="@string/all"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtSlaveIconAll_DirectoriesCategoryPlacesFrg"
+                            android:layout_width="30sp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="bottom|center"
+                            android:rotation="315"
+                            android:text="@string/fa_sort_desc"
+                            android:textColor="@color/colorMyDarkBlue"
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSecondMenuButton_DirectoriesCategoryPlacesFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyWhite"
+                        android:layout_marginRight="1px"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/txtMainIconCity_DirectoriesCategoryPlacesFrg"
+                            android:layout_width="40sp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="center"
+                            android:text="@string/fa_map_marker"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="center"
+                            android:text="@string/city"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtSlaveIconCity_DirectoriesCategoryPlacesFrg"
+                            android:layout_width="30sp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="bottom|center"
+                            android:rotation="315"
+                            android:text="@string/fa_sort_desc"
+                            android:textColor="@color/colorMyDarkBlue"
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutThirdMenuButton_DirectoriesCategoryPlacesFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMyWhite"
+                        android:layout_marginRight="1px"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/txtMainIconPrice_DirectoriesCategoryPlacesFrg"
+                            android:layout_width="40sp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="center"
+                            android:text="@string/fa_sort_amount_asc"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="center"
+                            android:text="@string/reviews"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtSlaveIconReviews_DirectoriesCategoryPlacesFrg"
+                            android:layout_width="25sp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="bottom|center"
+                            android:rotation="315"
+                            android:text="@string/fa_sort_desc"
+                            android:textColor="@color/colorMyDarkBlue"
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.example.david.isquare.CustomizedViews.ExpandedListView
+                    android:id="@+id/listPlaces_DirectoriesCategoryPlacesFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMyWhite" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

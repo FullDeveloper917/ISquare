@@ -1,0 +1,424 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.DirectoriesFragments.EditPlaceFragments.EditPlaceFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutMain_EditPlaceFrg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_EditPlaceFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/edit_info"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="9sp">
+
+                <Button
+                    android:id="@+id/btnSave_EditPlaceFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:background="@color/colorMyGray_1"
+                    android:text="@string/fa_floppy_o"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMyGray_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45sp"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="17sp"
+                        android:gravity="center"
+                        android:text="@string/payment"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135sp"
+                        android:orientation="vertical"
+                        android:background="@color/colorMyWhite">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="14sp"
+                            android:layout_marginRight="25sp"
+                            android:background="@color/colorMyWhite">
+
+                            <TextView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:layout_marginLeft="10sp"
+                                android:text="@string/fa_calendar"
+                                android:textColor="@color/colorMyGray_6"
+                                android:textSize="24sp"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45sp"
+                                android:layout_marginLeft="10sp"
+                                android:text="Added: 22.05.2016"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="16sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="13sp"
+                            android:layout_marginRight="25sp"
+                            android:background="@color/colorMyWhite">
+
+                            <TextView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:layout_marginLeft="10sp"
+                                android:text="@string/fa_calendar_times_o"
+                                android:textColor="@color/colorMyRed"
+                                android:textSize="24sp"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45sp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10sp"
+                                android:text="Expired: 22.04.2018"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="16sp"
+                                android:gravity="left|center"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="45sp"
+                                android:layout_marginLeft="10sp"
+                                android:text="@string/fa_credit_card"
+                                android:textColor="@color/colorMyGray_6"
+                                android:textSize="24sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45sp"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="36sp"
+                        android:gravity="center"
+                        android:text="@string/location"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="2px"
+                        android:background="@color/colorMyWhite">
+
+                        <Spinner
+                            android:id="@+id/spnRegion_EditPlaceFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15sp"
+                            android:layout_marginLeft="31sp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="15sp"
+                            android:background="@color/colorMyWhite"
+                            android:entries="@array/region_array"
+                            android:textColor="@color/colorMyGray_4"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="2px"
+                        android:background="@color/colorMyWhite">
+
+                        <Spinner
+                            android:id="@+id/spnState_EditPlaceFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15sp"
+                            android:layout_marginLeft="31sp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="15sp"
+                            android:background="@color/colorMyWhite"
+                            android:entries="@array/state_array_1"
+                            android:textColor="@color/colorMyGray_4"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="2px"
+                        android:background="@color/colorMyWhite">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15sp"
+                            android:layout_marginLeft="31sp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="15sp"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="left|center_vertical"
+                            android:hint="@string/street"
+                            android:paddingLeft="5sp"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textColorHint="@color/colorMyGray_7"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="2px"
+                        android:background="@color/colorMyWhite">
+
+                        <EditText
+                            android:id="@+id/edtPartnerId_EditPlaceFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15sp"
+                            android:layout_marginLeft="31sp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="15sp"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="left|center_vertical"
+                            android:hint="@string/building_number"
+                            android:paddingLeft="5sp"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textColorHint="@color/colorMyGray_7"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="153sp"
+                        android:layout_marginTop="2px"
+                        android:background="@color/colorMyWhite">
+
+                        <EditText
+                            android:id="@+id/edtGivenName_EditPlaceFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="130sp"
+                            android:layout_marginLeft="31sp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="8sp"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="left"
+                            android:hint="@string/building_name_block_floor_room_etc"
+                            android:paddingLeft="5sp"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textColorHint="@color/colorMyGray_7"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45sp"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="17sp"
+                        android:gravity="center"
+                        android:text="@string/info"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="153sp"
+                        android:layout_marginTop="2px"
+                        android:background="@color/colorMyWhite">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="130sp"
+                            android:layout_marginLeft="31sp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="8sp"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="left"
+                            android:hint="@string/description_in_english"
+                            android:paddingLeft="5sp"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textColorHint="@color/colorMyGray_7"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="153sp"
+                        android:layout_marginTop="2px"
+                        android:background="@color/colorMyWhite">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="130sp"
+                            android:layout_marginLeft="31sp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="8sp"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="left"
+                            android:hint="@string/description_in_chinese"
+                            android:paddingLeft="5sp"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textColorHint="@color/colorMyGray_7"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45sp"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="17sp"
+                        android:gravity="center"
+                        android:text="@string/main_image"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imgMain_EditPlaceFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="224sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fake_image" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45sp"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="17sp"
+                        android:gravity="center"
+                        android:text="@string/tags_or_keywords"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="2px"
+                        android:layout_marginBottom="37sp"
+                        android:background="@color/colorMyWhite">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15sp"
+                            android:layout_marginLeft="31sp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="15sp"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="left|center_vertical"
+                            android:hint="@string/drinks_music_beer_beauty"
+                            android:paddingLeft="5sp"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textColorHint="@color/colorMyGray_7"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

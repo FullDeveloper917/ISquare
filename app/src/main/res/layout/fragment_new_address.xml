@@ -1,0 +1,265 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.AddressFragments.NewAddressFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMyGray_2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:background="@color/colorMyGray_1"
+            android:layout_marginBottom="1sp">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_NewAddressFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_NewAddressFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/new_address"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="9sp">
+
+                <Button
+                    android:id="@+id/btnSave_NewAddressFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:background="@color/colorMyGray_1"
+                    android:text="@string/fa_floppy_o"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:background="@color/colorMyGray_2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="2px"
+                android:background="@color/colorMyWhite">
+
+                <TextView
+                    android:id="@+id/txtIconRegion_NewAddressFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginBottom="7sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="center"
+                    android:text="@string/fa_globe"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/spnRegion_NewAddressFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="15sp"
+                    android:background="@color/colorMyWhite"
+                    android:entries="@array/region_array"
+                    android:textColor="@color/colorMyGray_4"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="2px"
+                android:background="@color/colorMyWhite">
+
+                <TextView
+                    android:id="@+id/txtIconCity_NewAddressFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginBottom="7sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="center"
+                    android:text="@string/fa_map_marker"
+                    android:textColor="@color/colorMyGray_4"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtCity_NewAddressFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="15sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="left|center"
+                    android:hint="@string/my_id"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textColorHint="@color/colorMyGray_7"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="163sp"
+                android:layout_marginTop="2px"
+                android:background="@color/colorMyWhite"
+                android:paddingBottom="21sp"
+                android:paddingLeft="20sp"
+                android:paddingRight="30sp"
+                android:paddingTop="8sp">
+
+                <TextView
+                    android:id="@+id/txtIconFullAddress_NewAddressFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="center"
+                    android:text="@string/fa_road"
+                    android:textColor="@color/colorMyGray_4"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txtFullAddress_NewAddressFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="11sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="left"
+                    android:hint="@string/full_address"
+                    android:paddingBottom="30sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="30sp"
+                    android:paddingTop="5sp"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2px"
+                android:background="@color/colorMyWhite">
+
+                <TextView
+                    android:id="@+id/txtIconPhoneNumber_NewAddressFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginBottom="7sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="center"
+                    android:text="@string/fa_mobile"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/spnPhoneNumber_NewAddressFrg"
+                    android:layout_width="76sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="15sp"
+                    android:background="@color/colorMyWhite"
+                    android:entries="@array/phone_number_array"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorMyGray_4"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edtPhoneNumber_NewAddressFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="15sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/phone_number"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textColorHint="@color/colorMyGray_7"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="2px"
+                android:background="@color/colorMyWhite">
+
+                <TextView
+                    android:id="@+id/txtIconName_NewAddressFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="7sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="center"
+                    android:text="@string/fa_info_circle"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtName_NewAddressFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="15sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="left|center"
+                    android:hint="@string/name"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textColorHint="@color/colorMyGray_7"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

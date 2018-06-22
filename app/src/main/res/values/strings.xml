@@ -1,0 +1,359 @@
+<resources>
+    <string name="app_name">ISquare</string>
+
+    <!-- Start Activity -->
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+
+    <!-- SignIn Activity -->
+    <string name="my_id">My ID</string>
+    <string name="password">Password</string>
+
+    <!-- SignUp Activity -->
+    <string name="sign_in_blocked">SIGN IN( If account is blocked )</string>
+    <string name="partner_id">Partner ID</string>
+    <string name="given_name">Given name</string>
+    <string name="family_name">Family name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm password</string>
+
+    <string name="moments">Moments</string>
+    <string name="shops_page_design">Shops page design</string>
+    <string name="followers">Followers</string>
+    <string name="following">following</string>
+    <string name="me">Me</string>
+    <string name="admin">Admin</string>
+    <string name="balance">Balance</string>
+    <string name="Commission">Commission</string>
+    <string name="personal">Personal</string>
+    <string name="money">Money</string>
+    <string name="members">Members</string>
+    <string name="add_members">Add members</string>
+    <string name="create_group_chat">Create group chat</string>
+    <string name="baned_members">Baned members</string>
+    <string name="my_moments">My moments</string>
+    <string name="notifications">Notifications</string>
+    <string name="baned">Baned</string>
+    <string name="my_contacts">My contacts</string>
+    <string name="shopping">Shopping</string>
+    <string name="my_cart">My cart</string>
+    <string name="orders">Orders</string>
+    <string name="address">Address</string>
+    <string name="stared">Stared</string>
+    <string name="business">Business</string>
+    <string name="my_wallet">My wallet</string>
+    <string name="my_shop">My shop</string>
+    <string name="directories">Directories</string>
+    <string name="places">Places</string>
+    <string name="my_places">My places</string>
+    <string name="stared_places">Stared places</string>
+    <string name="likes">likes</string>
+    <string name="shop">Shop</string>
+    <string name="shops">Shops</string>
+    <string name="details">Details</string>
+    <string name="all">All</string>
+    <string name="all_cities">All cities</string>
+    <string name="city">city</string>
+    <string name="price">Price</string>
+    <string name="latest_added">Latest added</string>
+    <string name="best_sellers">Best sellers</string>
+    <string name="chats">Chats</string>
+    <string name="contacts">Contacts</string>
+    <string name="group_chat">Group Chat</string>
+    <string name="support">Support</string>
+    <string name="create_new_shop">Create new shop</string>
+    <string name="sample_address">新界荃灣德士古道62-70號寶業大廈B座2樓2室\nUnit 2, 2/F, Blk B, Po Yip Bldg.,\n62-70 Texaco Road, Tsuen Wan, N.T.</string>
+    <string name="start">Start</string>
+    <string name="this_month">This month</string>
+    <string name="products">Products</string>
+    <string name="directories_page_design">Directories page design</string>
+    <string name="leave_review">Leave review</string>
+    <string name="review">Review</string>
+    <string name="reviews">Reviews</string>
+    <string name="edit_shop_details">Edit shop details</string>
+    <string name="add_item">Add Item</string>
+    <string name="item_details">Item details</string>
+    <string name="condition">Condition</string>
+    <string name="string_new">New</string>
+    <string name="second_hand">Second hand</string>
+    <string name="choose_category_and_sub_category">Choose category &amp; sub-category</string>
+    <string name="main_image">Main image</string>
+    <string name="info">Info</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="image_1">Image 1</string>
+    <string name="image_2">Image 2</string>
+    <string name="info_2">Info 2</string>
+    <string name="title">Title</string>
+    <string name="text">Text</string>
+    <string name="quantity_and_price">Quantity &amp; Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="add_product_description">We let our members earn money when advise your products and we keep 10% of your price for partners Commissions. Be sure you entered your final price as you want to get after sale.</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="delivery">Delivery</string>
+    <string name="express_delivery_pick_up">Express delivery / Pick up</string>
+    <string name="total">Total</string>
+    <string name="express_company_name">Express company name</string>
+    <string name="tracking_number">Tracking number</string>
+    <string name="tracking_number_colon">Tracking number:</string>
+    <string name="confirm_tracking_number">Confirm Tracking number</string>
+    <string name="confirm">confirm</string>
+    <string name="order_details">Order details</string>
+    <string name="map">Map</string>
+    <string name="company">Company</string>
+    <string name="pick_up">Pick up</string>
+    <string name="address_where_you_can_pick_up_all_items">Address where you can pick up all items</string>
+    <string name="order_detail_of_pick_up_description">We informed buyer that all goods are ready for pick up</string>
+    <string name="goods_are_ready_for_pick_up">Goods are Ready for Pick up</string>
+    <string name="settings">Settings</string>
+    <string name="account_security">Account security</string>
+    <string name="new_partner">New partner</string>
+    <string name="in_app_vibrate">in-App vibrate</string>
+    <string name="only_wifi">Only WIFI</string>
+    <string name="help_and_feedback">Help &amp; Feedback</string>
+    <string name="updates_new_version">Updates (New version 3.0)</string>
+    <string name="text_size">Text size</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="personal_details">Personal details</string>
+    <string name="nationality">Nationality</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="my_qr_code">My QR code</string>
+    <string name="your_password">Your password</string>
+    <string name="new_password">New password</string>
+    <string name="back">Back</string>
+    <string name="updates">Updates</string>
+    <string name="automatically_update">Automatically Update</string>
+    <string name="update_now">Update now</string>
+    <string name="download_updates">Download updates</string>
+    <string name="google_play">Google Play</string>
+    <string name="download_directly">Download directly</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="i_received">I Received</string>
+    <string name="i_picked_up">I Picked Up</string>
+    <string name="new_address">New address</string>
+    <string name="edit_address">Edit address</string>
+    <string name="full_address">Full address</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="deposit">Deposit</string>
+    <string name="transactions">Transactions</string>
+    <string name="amount">Amount</string>
+    <string name="bank_name">Bank name</string>
+    <string name="bank_address">Bank address</string>
+    <string name="swift">SWIFT</string>
+    <string name="account_number">Account number</string>
+    <string name="first_name">First name</string>
+    <string name="send_request">Send request</string>
+    <string name="send_stared_item">Send stared item</string>
+    <string name="done">Done</string>
+    <string name="visa_master_card">Visa, Master card</string>
+    <string name="wechat">WeChat</string>
+    <string name="alipay">Alipay</string>
+    <string name="paypal">PayPal</string>
+    <string name="union_pay">Union Pay</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="payment_password">Payment password</string>
+    <string name="processing">Processing</string>
+    <string name="update_are_available">Update are available</string>
+    <string name="later">Later</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="ban">Ban</string>
+    <string name="are_you_sure_q">Are you sure?</string>
+    <string name="delete_moment_q">Delete moment?</string>
+    <string name="cancel_order_q">Cancel order?</string>
+    <string name="delete_item_q">Delete item?</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="enter_payment_password">Enter payment password</string>
+    <string name="sure_q">Sure?</string>
+    <string name="text_area">Text Area</string>
+    <string name="next">Next</string>
+    <string name="post_all">Post All</string>
+    <string name="post">Post</string>
+    <string name="thank_you_for_your_reviews">Thank you for your reviews</string>
+    <string name="check_out">Check out</string>
+    <string name="payment_method">Payment method</string>
+    <string name="payment_and_address">Payment &amp; Address</string>
+    <string name="your_orders_are_processing">Your orders are processing</string>
+    <string name="request_sent_successfully">Request sent successfully\nWe check your information and pubilsh it</string>
+    <string name="add_moment">Add moment</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="choose_photo">Choose photo</string>
+    <string name="choose_from_the_list">Choose from the list</string>
+    <string name="i_following">I following</string>
+    <string name="group_chats">Group chats</string>
+    <string name="group_name">Group name</string>
+    <string name="enter_id">Enter ID</string>
+    <string name="message">Message</string>
+    <string name="voice_call">Voice call</string>
+    <string name="comments">Comments</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="search">Search</string>
+    <string name="item_name">Item name</string>
+    <string name="important">Important</string>
+    <string name="profile">Profile</string>
+    <string name="shop_detail_important_text">We do not copy any brand fragrances. Product is not a copy of fake. It produced in own original 50ml package.</string>
+    <string name="delivery_info">Delivery Info</string>
+    <string name="shop_detail_delivery_info_text">- Pick up ( Hong Kong, Kowloon, Nathan rd. 365, Chong KIng mansion, Block C, floor 12, room 45 )</string>
+    <string name="shop_detail_info_text">Similar fragrance with Intoxicated by By Kilian.\n\nIt is a Aromatic Spicy fragrance for women and men.\nThe fragrance features cardamom, nutmeg,\ncinnamon and coffee.</string>
+    <string name="place_detail_info_text">If you can\'t explain it simply you don\'t understand it well enough. If you can\'t explain it simply you don\'t understand it well enough. If you can\'t explain it simply you don\'t understand it well enough.</string>
+    <string name="choose_item_from_catalogs">Choose_item_from_catalogs</string>
+    <string name="choose_product">Choose product</string>
+    <string name="perfume_armelle_102">Perfume Armelle #102</string>
+    <string name="choose_place">Choose Place</string>
+    <string name="mute_notifications">Mute notifications</string>
+    <string name="sticky_on_top">Sticky on top</string>
+    <string name="chat_settings">Chat settings</string>
+    <string name="album">Album</string>
+    <string name="contact">Contact</string>
+    <string name="item">Item</string>
+    <string name="place">Place</string>
+    <string name="transfer">Transfer</string>
+    <string name="call">Call</string>
+    <string name="group">Group</string>
+    <string name="group_chat_settings">Group chat settings</string>
+    <string name="only_admin_can_invite">Only admin can invite</string>
+    <string name="leave_group_chat">Leave group chat</string>
+    <string name="all_catalogue">All catalogue</string>
+    <string name="dishes">Dishes</string>
+    <string name="hotels">Hotels</string>
+    <string name="movies">Movies</string>
+    <string name="cafes">Cafes</string>
+    <string name="clubs_and_bars">Clubs &amp; Bars</string>
+    <string name="amusement">Amusement</string>
+    <string name="life">Life</string>
+    <string name="spa">SPA</string>
+    <string name="travel">Travel</string>
+    <string name="local_shop">Local shop</string>
+    <string name="location">Location</string>
+    <string name="hongkong">Hong Kong</string>
+    <string name="china_mainland">China, MainLand</string>
+    <string name="trial_period_6_months">Trial period ( 6 months )</string>
+    <string name="add_new_place">Add new place</string>
+    <string name="street">Street</string>
+    <string name="building_number">Building number</string>
+    <string name="building_name_block_floor_room_etc">Building name, block, floor, room etc</string>
+    <string name="name_in_english">Name in English</string>
+    <string name="name_in_chinese_optional">Name in Chinese ( optional )</string>
+    <string name="description_in_english">Description in English</string>
+    <string name="description_in_chinese">Description in Chinese ( optional )</string>
+    <string name="tags_or_keywords">Tags or Keywords</string>
+    <string name="drinks_music_beer_beauty">Drink, Music, Beer, Beauty</string>
+    <string name="image">Image</string>
+    <string name="edit_info">Edit info</string>
+    <string name="payment">Payment</string>
+    <string name="you_have_successfully_registered">You have successfully registered</string>
+    <string name="remember_your_id_and_password_to_sign_in_next_time">Remember your ID and password to Sign In next time</string>
+    <string name="new_password_was_sent_to_your_email">New password was sent to your email</string>
+    <string name="please_check">Please check</string>
+    <string name="was_blocked_successfully">was blocked successfully</string>
+    <string name="follow">Follow</string>
+    <string name="report">Report</string>
+    <string name="block_profile">Block profile</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="remove">Remove</string>
+    <string name="delete">Delete</string>
+    <string name="create_group_name">Create group name</string>
+    <string name="send_photo">Send photo</string>
+    <string name="ban_profile">Ban profile</string>
+
+    <string name="sign_up_ch">注删</string>
+    <string name="sign_in_ch">签到</string>
+
+    <string-array name="shop_first_menu_dish_sub_menus">
+        <item>Afternoon tea</item>
+        <item>Coffee</item>
+        <item>Chinese dishes</item>
+        <item>Pub</item>
+        <item>Special</item>
+        <item>Shushi</item>
+        <item>Korean dishes</item>
+        <item>Cantonese cuisine</item>
+        <item>Drink</item>
+    </string-array>
+
+    <string-array name="china_cities">
+        <item>Beijing</item>
+        <item>GuangZhou</item>
+        <item>ShangHai</item>
+        <item>TianJin</item>
+    </string-array>
+
+    <string-array name="directories_first_menu_shops_sub_menus">
+        <item>Clothes</item>
+        <item>Shoes</item>
+        <item>Jewerly</item>
+        <item>Electronics</item>
+        <item>Special</item>
+        <item>Shushi</item>
+        <item>Korean dishes</item>
+        <item>Cantonese cuisine</item>
+        <item>Drink</item>
+    </string-array>
+
+    <string-array name="language_array">
+        <item>English</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string-array name="product_category_array">
+        <item>Sport &amp; Beauty</item>
+        <item>Food &amp; Drinks</item>
+        <item>Cafes</item>
+        <item>Restaurants</item>
+        <item>Clubs</item>
+        <item>Finances</item>
+    </string-array>
+
+    <string-array name="product_sub_category_array">
+        <item>Tattoo salon</item>
+        <item>Gym</item>
+        <item>Law firm</item>
+    </string-array>
+
+    <string-array name="product_condition_array">
+        <item>New</item>
+        <item>Second Hand</item>
+    </string-array>
+
+    <string-array name="currency_array">
+        <item>HKD</item>
+        <item>RMB</item>
+    </string-array>
+
+    <string-array name="region_array">
+        <item>Hong Kong</item>
+        <item>China, Mainland</item>
+    </string-array>
+
+    <string-array name="state_array_1">
+        <item>Guangzhou</item>
+        <item>Shenzhen</item>
+        <item>Shanghai</item>
+    </string-array>
+
+    <string-array name="phone_number_array">
+        <item>86</item>
+        <item>852</item>
+    </string-array>
+
+    <string-array name="state_array">
+        <item>Sha Tin</item>
+        <item>Tsuen Wan</item>
+    </string-array>
+
+    <string-array name="delivery_array">
+        <item>Provide delivery</item>
+        <item>Only pick up</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="google_maps_key">AIzaSyD9Edxnp7Fji1KLFEngI_a9URM6yFpA6qs</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutOneProduct_OneAdminProduct"
+    android:layout_width="match_parent"
+    android:layout_height="115sp"
+    android:background="@color/colorMyWhite"
+    android:padding="10sp">
+
+    <ImageView
+        android:layout_width="95sp"
+        android:layout_height="95sp"
+        android:background="@color/colorMyGray_7"
+        android:src="@drawable/raw_1505685786"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Armelle #102"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="left|center"
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/btnTrash_OneAdminProducts"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_marginTop="-9sp"
+                android:text="@string/fa_trash_o"
+                android:textColor="@color/colorMyGray_9"
+                android:textSize="24sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txtName_OneAdminProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="25sp"
+                        android:text="Anna Klein"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="14sp"
+                        android:gravity="left|center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25sp"
+                        android:layout_marginTop="-5sp"
+                        android:text="Hong Kong, Stenley"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="14sp"
+                        android:gravity="left|center" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:text="HK$ 345"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp"
+                    android:gravity="right|center"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

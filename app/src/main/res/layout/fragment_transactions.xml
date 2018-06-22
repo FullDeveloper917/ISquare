@@ -1,0 +1,132 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.MyWalletFragments.TransactionsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_TransactionsFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="9sp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_TransactionsFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/transactions"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorMyGray_2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@color/colorMyWhite"
+                android:paddingBottom="7sp"
+                android:paddingLeft="20sp"
+                android:paddingRight="10sp"
+                android:paddingTop="8sp">
+
+                <TextView
+                    android:id="@+id/txtIconWithdrawal_TransactionsFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_long_arrow_right"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="Withdrawal: HK$ 4600"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtSlaveIconWithdrawal_TransactionsFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_spinner"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="2px"
+                android:background="@color/colorMyWhite"
+                android:paddingBottom="7sp"
+                android:paddingLeft="20sp"
+                android:paddingRight="10sp"
+                android:paddingTop="8sp">
+
+                <TextView
+                    android:id="@+id/txtIconDeposit_TransactionsFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_long_arrow_left"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="Deposit: HK$500"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtSlaveIconDeposit_TransactionsFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_check_circle"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

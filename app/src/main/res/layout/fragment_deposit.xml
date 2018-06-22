@@ -1,0 +1,169 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.MyWalletFragments.DepositFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_DepositFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_DepositFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/deposit"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorMyGray_2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="2px"
+                android:layout_marginBottom="37sp"
+                android:background="@color/colorMyWhite">
+
+                <TextView
+                    android:id="@+id/txtIconAmount_DepositFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginBottom="7sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="center"
+                    android:text="@string/fa_money"
+                    android:textColor="@color/colorMyGray_4"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtAmount_DepositFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="15sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/amount"
+                    android:paddingLeft="5sp"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textColorHint="@color/colorMyGray_7"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMyWhite"
+                android:paddingLeft="15sp"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:text="Visa, Master card"
+                    android:background="@color/colorMyWhite"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="16sp"
+                    android:paddingLeft="10sp"
+                    android:gravity="left|center"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:text="WeChat"
+                    android:background="@color/colorMyWhite"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="16sp"
+                    android:paddingLeft="10sp"
+                    android:gravity="left|center"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:text="Alipay"
+                    android:background="@color/colorMyWhite"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="16sp"
+                    android:paddingLeft="10sp"
+                    android:gravity="left|center"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:text="PayPal"
+                    android:background="@color/colorMyWhite"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="16sp"
+                    android:paddingLeft="10sp"
+                    android:gravity="left|center"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:text="Union Pay"
+                    android:background="@color/colorMyWhite"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="16sp"
+                    android:paddingLeft="10sp"
+                    android:gravity="left|center"/>
+
+            </RadioGroup>
+
+
+
+            <Button
+                android:id="@+id/btnDeposit_DepositFrg"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/deposit"
+                android:background="@drawable/red_button_border"
+                android:textColor="@color/colorMyWhite"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

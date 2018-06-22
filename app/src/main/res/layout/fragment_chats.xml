@@ -1,0 +1,182 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.ChatsFragments.ChatsFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutMain_ChatsFrg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58sp"
+                android:background="@color/colorMyGray_1"
+                android:layout_marginBottom="1sp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="7sp">
+
+                    <TextView
+                        android:id="@+id/txtIconChats_ChatsFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:gravity="center"
+                        android:text="@string/fa_comments"
+                        android:textColor="@color/colorMyRed"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/chats"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginTop="7sp"
+                    android:gravity="right">
+
+                    <Button
+                        android:id="@+id/btnMenu_ChatsFrg"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:background="@color/colorMyGray_1"
+                        android:gravity="center"
+                        android:text="@string/fa_plus"
+                        android:textColor="@color/colorMyGray_9"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listChatBlocks_ChatsFrg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMyGray_2">
+
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMenu_ChatsFrg"
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20sp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@drawable/menu_first_border">
+
+                <LinearLayout
+                    android:id="@+id/layoutMenuContacts_ChatsFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/fa_user"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/contacts"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMenuGroupChat_ChatsFrg"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/menu_common_border">
+
+                <TextView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="5sp"
+                    android:text="@string/fa_users"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45sp"
+                    android:text="@string/group_chat"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMenuSupport_ChatsFrg"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/menu_common_border">
+
+                <TextView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="5sp"
+                    android:text="@string/fa_comment_o"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45sp"
+                    android:text="@string/support"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frgMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/layoutControlTab_Main"
+            android:layout_width="match_parent"
+            android:layout_height="51sp"
+            android:background="@color/colorMyGray_1">
+
+            <Button
+                android:id="@+id/btnUsers_Main"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/fa_user"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="26sp"
+                android:background="@color/colorMyGray_1"/>
+
+            <Button
+                android:id="@+id/btnMoments_Main"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/fa_chrome"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="26sp"
+                android:background="@color/colorMyGray_1"/>
+
+            <Button
+                android:id="@+id/btnShops_Main"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/fa_shopping_bag"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="26sp"
+                android:background="@color/colorMyGray_1"/>
+
+            <Button
+                android:id="@+id/btnChats_Main"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/fa_comments"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="26sp"
+                android:background="@color/colorMyGray_1"/>
+
+            <Button
+                android:id="@+id/btnDirectories_Main"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/fa_home"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="26sp"
+                android:background="@color/colorMyGray_1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

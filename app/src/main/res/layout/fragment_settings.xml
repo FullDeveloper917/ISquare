@@ -1,0 +1,631 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.SettingsFragments.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMyGray_9"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:layout_marginBottom="2px"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_SettingsFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="9sp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_SettingsFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/settings"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="9sp">
+
+                <Button
+                    android:id="@+id/btnGoQR_SettingsFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:background="@color/colorMyGray_1"
+                    android:gravity="center"
+                    android:text="@string/fa_qrcode"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMyGray_2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layoutPersonalDetails_SettingsFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:background="@color/colorMyWhite"
+                        android:paddingBottom="7sp"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="10sp"
+                        android:paddingTop="8sp">
+
+                        <TextView
+                            android:id="@+id/txtIconPersonalDetails_SettingsFrg"
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:gravity="center"
+                            android:text="@string/fa_user"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="@string/personal_details"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorMyGray_2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="280sp"
+                            android:layout_height="45sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="14sp"
+                            android:gravity="left|center"
+                            android:text="@string/account_security"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutPassword_SettingsFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconPassword_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_key"
+                                android:textColor="@color/colorMyRed"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="left|center"
+                                android:text="@string/password"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorMyGray_2"
+                        android:paddingBottom="27sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="280sp"
+                            android:layout_height="45sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="14sp"
+                            android:gravity="left|center"
+                            android:text="@string/notifications"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutNewPartner_SettingsFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconNewPartner_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_users"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center"
+                                android:text="@string/new_partner"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="18sp" />
+
+                            <ToggleButton
+                                android:id="@+id/tglNewPartner_SettingFrg"
+                                android:layout_width="50sp"
+                                android:layout_height="30sp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/toggle_selector"
+                                android:checked="false"
+                                android:text=""
+                                android:textOff=""
+                                android:textOn="" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconMoments_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_chrome"
+                                android:textColor="@color/colorMyRed"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center"
+                                android:text="@string/moments"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="18sp" />
+
+                            <ToggleButton
+                                android:id="@+id/tglMoments_SettingFrg"
+                                android:layout_width="50sp"
+                                android:layout_height="30sp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/toggle_selector"
+                                android:checked="true"
+                                android:text=""
+                                android:textOff=""
+                                android:textOn="" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconChats_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_comments"
+                                android:textColor="@color/colorMyRed"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center"
+                                android:text="@string/chats"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="18sp" />
+
+                            <ToggleButton
+                                android:id="@+id/tglChats_SettingFrg"
+                                android:layout_width="50sp"
+                                android:layout_height="30sp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/toggle_selector"
+                                android:checked="true"
+                                android:text=""
+                                android:textOff=""
+                                android:textOn="" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconInAppVibrate_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_tablet"
+                                android:textColor="@color/colorMyRed"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center"
+                                android:text="@string/in_app_vibrate"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="18sp" />
+
+                            <ToggleButton
+                                android:id="@+id/tglInAppVibrate_SettingFrg"
+                                android:layout_width="50sp"
+                                android:layout_height="30sp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/toggle_selector"
+                                android:checked="true"
+                                android:text=""
+                                android:textOff=""
+                                android:textOn="" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconOnlyWifi_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_wifi"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center"
+                                android:text="@string/only_wifi"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="18sp" />
+
+                            <ToggleButton
+                                android:id="@+id/tglOnlyWifi_SettingFrg"
+                                android:layout_width="50sp"
+                                android:layout_height="30sp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/toggle_selector"
+                                android:checked="false"
+                                android:text=""
+                                android:textOff=""
+                                android:textOn="" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorMyGray_2"
+                        android:paddingBottom="27sp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/layoutHelpFeedback_SettingsFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconHelpFeedback_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_comment_o"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center"
+                                android:text="@string/help_and_feedback"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtSlaveIconHelpFeedback_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_angle_right"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutUpdates_SettingsFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconUpdates_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_repeat"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center"
+                                android:text="@string/updates_new_version"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtSlaveIconUpdates_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_angle_right"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconCurrency_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_money"
+                                android:textColor="@color/colorMyRed"
+                                android:textSize="24sp" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="30sp"
+                                android:background="@color/colorMyWhite"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorMyGray_4"
+                                android:paddingLeft="5sp"
+                                android:entries="@array/currency_array"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconRegion_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_globe"
+                                android:textColor="@color/colorMyRed"
+                                android:textSize="24sp" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="30sp"
+                                android:background="@color/colorMyWhite"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorMyGray_4"
+                                android:paddingLeft="5sp"
+                                android:entries="@array/region_array"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconLanguage_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_language"
+                                android:textColor="@color/colorMyDarkBlue"
+                                android:textSize="24sp" />
+
+                            <Spinner
+                                android:id="@+id/spnRegion_SignUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="30sp"
+                                android:background="@color/colorMyWhite"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorMyGray_4"
+                                android:paddingLeft="5sp"
+                                android:entries="@array/language_array"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorMyGray_2"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/layoutTextSize_SettingsFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="0.5sp"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="7sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="8sp">
+
+                            <TextView
+                                android:id="@+id/txtIconTextSize_SettingsFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_font"
+                                android:textColor="@color/colorMyRed"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center"
+                                android:text="@string/text_size"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnSignOut_SettingsFrg"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:layout_marginTop="44sp"
+                        android:layout_marginBottom="38dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/sign_out"
+                        android:background="@drawable/blue_button_border"
+                        android:textColor="@color/colorMyWhite"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

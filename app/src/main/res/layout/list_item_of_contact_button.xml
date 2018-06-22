@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutFollowers_OneContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="2px"
+        android:background="@color/colorMyWhite">
+
+        <TextView
+            android:id="@+id/txtIconFollowers_OneContactButton"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginBottom="7sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="8sp"
+            android:background="@color/colorMyWhite"
+            android:gravity="center"
+            android:text="@string/fa_user"
+            android:textColor="@color/colorMyRed"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtFollowers_OneContactButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginTop="15sp"
+            android:background="@color/colorMyWhite"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5sp"
+            android:text="@string/followers"
+            android:textColor="@color/colorMyGray_10"
+            android:textColorHint="@color/colorMyGray_7"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

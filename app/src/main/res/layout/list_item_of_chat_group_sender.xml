@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/layoutMain_ChatGroupSender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102sp"
+            android:layout_weight="1"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/white_view_background">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="65sp"
+                android:layout_height="65sp"
+                android:layout_marginLeft="15sp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_photo_sample"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="19sp">
+
+                <TextView
+                    android:id="@+id/txtIconUsers_ChatGroupSender"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:text="@string/fa_users"
+                    android:layout_marginBottom="-8sp"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38sp"
+                    android:layout_marginTop="-6sp"
+                    android:text="Buy &amp; Sell in HK, Sh..."
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="16sp"
+                    android:gravity="left|center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgSender_ChatGroupSender"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/chat_member" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

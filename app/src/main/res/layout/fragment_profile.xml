@@ -1,0 +1,431 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.MyContactsFragments.ProfileFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutMain_ProfileFrg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58sp"
+                android:layout_marginBottom="1sp"
+                android:background="@color/colorMyGray_1">
+
+                <LinearLayout
+                    android:id="@+id/layoutRtn_ProfileFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="9sp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txtIconRtn_ProfileFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:gravity="center"
+                        android:text="@string/fa_chevron_left"
+                        android:textColor="@color/colorMyDarkBlue"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/profile"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnMenu_ProfileFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@color/colorMyGray_1"
+                    android:gravity="center"
+                    android:text="@string/fa_bars"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="163sp"
+                        android:background="@color/colorMyGray_5">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="65sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="20sp"
+                            android:src="@drawable/user_photo_sample" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20sp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0sp"
+                                android:layout_weight="1"
+                                android:paddingTop="10sp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtMyName_UserFrg"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0sp"
+                                        android:layout_weight="1"
+                                        android:text="Anna Klein"
+                                        android:textColor="@color/colorMyGray_10"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtMyId_ProfileFrg"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0sp"
+                                        android:layout_weight="1"
+                                        android:text="ID: 8520000786"
+                                        android:textColor="@color/colorMyGray_10"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <Button
+
+                                    android:id="@+id/btnSetting_ProfileFrg"
+                                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorMyGray_5"
+                                    android:text="@string/fa_cog"
+                                    android:textColor="@color/colorMyDarkBlue"
+                                    android:textSize="24sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5sp"
+                                android:background="@color/colorMyGray_8" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0sp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="0sp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:paddingTop="15sp">
+
+                                    <TextView
+                                        android:id="@+id/txtMomentsNumber_UsersFrg"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0sp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="394"
+                                        android:textColor="@color/colorMyBlack"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0sp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="moments"
+                                        android:textColor="@color/colorMyGray_10"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0sp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:paddingTop="15sp">
+
+                                    <TextView
+                                        android:id="@+id/txtFollowersNumber_UsersFrg"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0sp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="51"
+                                        android:textColor="@color/colorMyBlack"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0sp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="@string/followers"
+                                        android:textColor="@color/colorMyGray_10"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0sp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:paddingTop="15sp">
+
+                                    <TextView
+                                        android:id="@+id/txtFollowingsNumber_UsersFrg"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0sp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="184"
+                                        android:textColor="@color/colorMyBlack"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0sp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="following"
+                                        android:textColor="@color/colorMyGray_10"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="127sp"
+                        android:orientation="vertical"
+                        android:background="@color/colorMyGray_2">
+
+                        <Button
+                            android:id="@+id/btnMessage_ProfileFrg"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="match_parent"
+                            android:layout_height="51dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="9sp"
+                            android:text="@string/message"
+                            android:textColor="@color/colorMyWhite"
+                            android:textSize="16sp"
+                            android:textAllCaps="false"
+                            android:background="@drawable/blue_button_border"/>
+
+                        <Button
+                            android:id="@+id/btnVoiceCall_ProfileFrg"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="match_parent"
+                            android:layout_height="51dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="8sp"
+                            android:layout_marginBottom="8sp"
+                            android:text="@string/voice_call"
+                            android:textColor="@color/colorMyWhite"
+                            android:textSize="16sp"
+                            android:textAllCaps="false"
+                            android:background="@drawable/red_button_border"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="1sp">
+
+                        <Button
+                            android:id="@+id/btnGrid_ProfileFrg"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="center"
+                            android:text="@string/fa_th"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <Button
+                            android:id="@+id/btnList_ProfileFrg"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="center"
+                            android:text="@string/fa_align_justify"
+                            android:textColor="@color/colorMyGray_6"
+                            android:textSize="24sp" />
+
+                        <Button
+                            android:id="@+id/btnBookMark_ProfileFrg"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:gravity="center"
+                            android:text="@string/fa_bookmark_o"
+                            android:textColor="@color/colorMyGray_6"
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorMyGray_2">
+
+                        <com.example.david.isquare.CustomizedViews.ExpandedListView
+                            android:id="@+id/listMoments_ProfileFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="100sp"
+                            android:background="@color/colorMyGray_2"
+                            android:visibility="gone"/>
+
+                        <com.example.david.isquare.CustomizedViews.ExpandedGridView
+                            android:id="@+id/gridMoments_ProfileFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="100sp"
+                            android:background="@color/colorMyGray_2"
+                            android:numColumns="3"
+                            android:verticalSpacing="3px"
+                            android:horizontalSpacing="3px"
+                            android:stretchMode="columnWidth"
+                            android:gravity="center"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMenu_ProfileFrg"
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20sp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@drawable/menu_first_border">
+
+                <LinearLayout
+                    android:id="@+id/layoutMenuFollowOrUnfollow_ProfileFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/txtIconMenuFollowOrUnfollow_ProfileFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/fa_eye"
+                        android:textColor="@color/colorMyRed"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtMenuFollowOrUnfollow_ProfileFrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45sp"
+                        android:text="@string/follow"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMenuReport_ProfileFrg"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/menu_common_border">
+
+                <TextView
+                    android:id="@+id/txtIconMenuReport_ProfileFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="5sp"
+                    android:text="@string/fa_info_circle"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtMenuReport_ProfileFrg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45sp"
+                    android:text="@string/report"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+
+</FrameLayout>

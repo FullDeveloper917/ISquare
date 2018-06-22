@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64sp"
+        android:background="@color/colorMyGray_2">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:layout_marginLeft="10sp"
+            android:layout_gravity="left|center"
+            android:src="@drawable/user_photo_sample"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="9sp"
+            android:text="4568321"
+            android:textColor="@color/colorMyGray_10"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescription_OneCommonNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="14sp"
+            android:text="New partner registered"
+            android:textColor="@color/colorMyGray_10"
+            android:textSize="14sp"
+            android:gravity="left|center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

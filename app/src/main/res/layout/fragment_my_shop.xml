@@ -1,0 +1,267 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMyGray_2"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.MyShopFragments.MyShopFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_MyShopFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="9sp">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_MyShopFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_shop"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9sp">
+
+                <Button
+                    android:id="@+id/btnGoEdit_MyShopFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:background="@color/colorMyGray_1"
+                    android:text="@string/fa_cog"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="24sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMyGray_2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginBottom="33sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorMyWhite"
+                    android:paddingTop="18sp"
+                    android:paddingLeft="20sp"
+                    android:paddingBottom="17sp"
+                    android:paddingRight="10sp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txtIconAll_MyShopFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:text="@string/fa_money"
+                        android:textColor="@color/colorMyDarkBlue"
+                        android:textSize="24sp"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/all"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/txtAll_UsersFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="HK$ 8802.56"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5sp"
+                    android:layout_weight="1"
+                    android:background="@color/colorMyWhite"
+                    android:paddingBottom="17sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="18sp">
+
+                    <TextView
+                        android:id="@+id/txtIconThisMonth_MyShopFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:gravity="center"
+                        android:text="@string/fa_money"
+                        android:textColor="@color/colorMyRed"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/this_month"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtCommission_UsersFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="HK$ 8802.56"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutProducts_MyShopFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:background="@color/colorMyWhite"
+                    android:paddingTop="8sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
+                    android:paddingBottom="7sp">
+
+                    <TextView
+                        android:id="@+id/txtIconProducts_MyShopFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:text="@string/fa_shopping_cart"
+                        android:textColor="@color/colorMyRed"
+                        android:textSize="24sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/products"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp"
+                        android:gravity="left|center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutOrders_MyShopFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:background="@color/colorMyWhite"
+                    android:layout_marginTop="0.5sp"
+                    android:paddingTop="8sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
+                    android:paddingBottom="7sp">
+
+                    <TextView
+                        android:id="@+id/txtIconOrders_MyShopFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:text="@string/fa_shopping_basket"
+                        android:textColor="@color/colorMyRed"
+                        android:textSize="24sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/orders"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp"
+                        android:gravity="left|center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutReviews_MyShopFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:background="@color/colorMyWhite"
+                    android:layout_marginTop="0.5sp"
+                    android:paddingTop="8sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
+                    android:paddingBottom="7sp">
+
+                    <TextView
+                        android:id="@+id/txtIconReviews_MyShopFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:text="@string/fa_commenting"
+                        android:textColor="@color/colorMyRed"
+                        android:textSize="24sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/reviews"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp"
+                        android:gravity="left|center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

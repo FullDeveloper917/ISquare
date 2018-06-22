@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/gray_dialog_background"
+    android:layout_width="309sp"
+    android:layout_height="171sp">
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="164sp"
+        android:layout_height="23sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/are_you_sure_q"
+        android:textColor="@color/colorMyGray_10"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28sp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCancel_ChatMemberRemoveDialog"
+            android:layout_width="124dp"
+            android:layout_height="45dp"
+            android:background="@drawable/red_button_border"
+            android:text="@string/cancel"
+            android:textColor="@color/colorMyWhite"
+            android:textSize="14sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnBan_ChatMemberRemoveDialog"
+            android:layout_width="124dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="21sp"
+            android:background="@drawable/blue_button_border"
+            android:text="@string/ban"
+            android:textColor="@color/colorMyWhite"
+            android:textSize="14sp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/layoutMain_ChatContactSender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102sp"
+            android:layout_weight="1"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/white_view_background">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="65sp"
+                android:layout_height="65sp"
+                android:layout_marginLeft="15sp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_photo_sample"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="19sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38sp"
+                    android:text="Anna Klein"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="16sp"
+                    android:gravity="left|center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27sp"
+                    android:layout_marginTop="-6sp"
+                    android:text="Hong Kong, Sha Tin"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="14sp"
+                    android:gravity="left|center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgSender_ChatContactSender"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/chat_member"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

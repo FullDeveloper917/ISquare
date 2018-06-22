@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/layoutMain_ChatShareLocationSender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76sp"
+            android:layout_weight="1"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/white_view_background">
+
+            <TextView
+                android:id="@+id/txtIconShareLocation_ChatShareLocationSender"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="18sp"
+                android:text="@string/fa_map_marker"
+                android:textColor="@color/colorMyDarkBlue"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30sp"
+                android:gravity="center"
+                android:text="Share location"
+                android:textColor="@color/colorMyGray_10"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgSender_ChatShareLocationSender"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/chat_member" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

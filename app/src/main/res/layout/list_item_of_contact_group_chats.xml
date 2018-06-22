@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutMain_OneContactGroupChat"
+        android:layout_width="match_parent"
+        android:layout_height="89sp"
+        android:layout_marginTop="2px"
+        android:background="@color/colorMyWhite">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="65sp"
+            android:layout_height="65sp"
+            android:layout_marginLeft="20sp"
+            android:layout_gravity="center"
+            android:src="@drawable/user_photo_sample"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15sp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtName_OneContactGroupChat"
+                android:layout_width="match_parent"
+                android:layout_height="38sp"
+                android:layout_marginTop="12sp"
+                android:text="Buy &amp; Sale in Guangzhou"
+                android:textColor="@color/colorMyGray_10"
+                android:textSize="18sp"
+                android:gravity="left|center"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="27sp"
+                android:text="2347 members"
+                android:textColor="@color/colorMyGray_10"
+                android:textSize="14sp"
+                android:gravity="left|center"
+                android:layout_marginTop="-6sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

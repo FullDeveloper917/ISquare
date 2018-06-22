@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.MyShopFragments.ReviewsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:layout_marginBottom="1sp"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_ReviewsFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_ReviewsFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/reviews"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/listReviews_ReviewsFrg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorMyGray_2"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,183 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MomentsFragments.CommentsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:layout_marginBottom="1sp"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_CommentsFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_CommentsFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/comments"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMyGray_2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="169sp"
+                        android:layout_marginBottom="21sp"
+                        android:background="@color/colorMyGray_9"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74sp"
+                            android:layout_marginBottom="1px"
+                            android:background="@color/colorMyWhite">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="44sp"
+                                android:layout_height="44sp"
+                                android:layout_marginLeft="16sp"
+                                android:layout_marginTop="12sp"
+                                android:src="@drawable/raw_1485072577" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="44sp"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginTop="12sp"
+                                android:gravity="center"
+                                android:text="ARMELLE ASIA"
+                                android:textColor="@color/colorMyGray_10"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="95sp"
+                            android:background="@color/colorMyWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="23sp"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="14sp"
+                                android:gravity="left|center"
+                                android:text="New Fragrances. Holiday Gift Guide"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorMyGray_10" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginRight="22sp"
+                                android:layout_marginTop="5sp"
+                                android:gravity="left|center"
+                                android:text="How to buy best girft for any holiday, we will tell you our special secrets....."
+                                android:textColor="@color/colorMyGray_10" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.example.david.isquare.CustomizedViews.ExpandedListView
+                        android:id="@+id/listComments_CommentsFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="67sp" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp">
+
+                <TextView
+                    android:id="@+id/txtIconInputMessage_CommentsFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:background="@drawable/message_input_left_border"
+                    android:gravity="center"
+                    android:text="@string/fa_smile_o"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/message_input_right_border"
+                    android:gravity="left|center"
+                    android:hint="@string/type_a_message"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textColorHint="@color/colorMyGray_7"
+                    android:textSize="14sp"
+                    android:padding="5sp" />
+
+                <Button
+                    android:id="@+id/btnInputMessage_CommentsFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5sp"
+                    android:background="@drawable/blue_circle_button_border"
+                    android:text="@string/fa_check"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/layoutComment_OneComment"
+        android:layout_width="match_parent"
+        android:layout_height="101sp"
+        android:layout_marginTop="2px"
+        android:background="@color/colorMyWhite">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="12sp"
+            android:src="@drawable/raw_1485072577"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtName_OneComment"
+                android:layout_width="match_parent"
+                android:layout_height="44sp"
+                android:layout_marginTop="2sp"
+                android:text="ARMELLE ASIA"
+                android:textColor="@color/colorMyGray_10"
+                android:textSize="18sp"
+                android:gravity="left|center"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22sp"
+                android:text="How to buy best girft for any holiday, we will tell you our special secrets....."
+                android:textColor="@color/colorMyGray_10"
+                android:textSize="14sp"
+                android:gravity="left|center"
+                android:layout_marginTop="-6sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

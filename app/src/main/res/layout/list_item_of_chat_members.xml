@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/layoutPartner_OneChatMember"
+        android:layout_width="match_parent"
+        android:layout_height="89sp"
+        android:layout_marginTop="2px"
+        android:background="@color/colorMyWhite">
+
+        <LinearLayout
+            android:id="@+id/layoutOneMember_OneChatMember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="65sp"
+                android:layout_height="65sp"
+                android:layout_marginLeft="20sp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_photo_sample" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15sp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtName_OneChatMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="38sp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="12sp"
+                    android:gravity="left|center"
+                    android:text="Anna Klein"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27sp"
+                    android:layout_marginTop="-6sp"
+                    android:gravity="left|center"
+                    android:text="Hong Kong, Sha Tin"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10sp">
+
+            <Button
+                android:id="@+id/btnBaned_OneChatMember"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:text="@string/fa_ban"
+                android:textColor="@color/colorMyGray_4"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/checkInsert_OneChatMember"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

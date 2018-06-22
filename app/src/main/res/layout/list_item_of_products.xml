@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutOneProduct_OneProduct"
+    android:layout_width="match_parent"
+    android:layout_height="120sp"
+    android:background="@color/colorMyWhite"
+    android:padding="10sp">
+
+    <ImageView
+        android:layout_width="120sp"
+        android:layout_height="match_parent"
+        android:background="@color/colorMyGray_7"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fake_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Armelle #102"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="left|center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Stock: 200"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="left|center"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <View
+                        android:layout_width="95sp"
+                        android:layout_height="2px"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="2sp"
+                        android:background="@color/colorMyGray_7"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="HK$ 900"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="16sp"
+                    android:gravity="left|center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/btnEdit_OneProduct"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@color/colorMyWhite"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:text="@string/fa_pencil_square_o"
+                android:textColor="@color/colorMyGray_9"
+                android:textSize="28sp"
+                android:layout_gravity="bottom"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

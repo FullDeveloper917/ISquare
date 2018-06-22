@@ -1,0 +1,933 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.AdminFragments.AdminFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutGoUsers_AdminFrg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <TextView
+                    android:id="@+id/txtIconUsers_AdminFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_user"
+                    android:textColor="@color/colorMyGray_6"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/me"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="27sp"
+                android:layout_marginTop="7sp"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/txtIconAdmin_AdminFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_user"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/admin"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="74sp"
+                android:background="@color/colorMyGray_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="2px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="2px"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="17sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="18sp">
+
+                            <TextView
+                                android:id="@+id/txtIconTotal_AdminFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_money"
+                                android:textColor="@color/colorMyDarkBlue"
+                                android:textSize="24sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/total"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtTotal_AdminFrg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="HK$ 8802.56"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="17sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="18sp">
+
+                            <TextView
+                                android:id="@+id/txtIconCommission_AdminFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_money"
+                                android:textColor="@color/colorMyRed"
+                                android:textSize="24sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/Commission"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtCommission_AdminFrg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="HK$ 8802.56"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="2px"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="17sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="18sp">
+
+                            <TextView
+                                android:id="@+id/txtIconBalance_AdminFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_money"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/balance"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtBalance_AdminFrg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="HK$ 8802.56"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="17sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="18sp">
+
+                            <TextView
+                                android:id="@+id/txtIconThisMonth_AdminFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_money"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/this_month"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtThisMonth_AdminFrg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="HK$ 8802.56"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMyGray_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="71sp"
+                        android:gravity="left|center"
+                        android:paddingLeft="20sp"
+                        android:paddingTop="26sp"
+                        android:text="@string/money"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutWithdrawal_AdminFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:background="@color/colorMyWhite"
+                        android:paddingBottom="7sp"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="10sp"
+                        android:paddingTop="8sp">
+
+                        <TextView
+                            android:id="@+id/txtIconWithdrawal_AdminFrg"
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:gravity="center"
+                            android:text="@string/fa_long_arrow_right"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="Withdrawal(495)"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMyGray_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="71sp"
+                        android:gravity="left|center"
+                        android:paddingLeft="20sp"
+                        android:paddingTop="26sp"
+                        android:text="@string/members"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="2px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="2px"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="17sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="18sp">
+
+                            <TextView
+                                android:id="@+id/txtIconMembersNumber_AdminFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_users"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/members"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtMembersNumber_AdminFrg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="345"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="17sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="18sp">
+
+                            <TextView
+                                android:id="@+id/txtIconMomentsNumber_AdminFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_chrome"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/moments"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtMomentsNumber_AdminFrg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="1235"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutAllMembers_AdminFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:background="@color/colorMyWhite"
+                        android:paddingBottom="7sp"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="10sp"
+                        android:paddingTop="8sp">
+
+                        <TextView
+                            android:id="@+id/txtIconAllMembers_AdminFrg"
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:gravity="center"
+                            android:text="@string/fa_users"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="@string/all"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutBanedMembers_AdminFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="0.5sp"
+                        android:background="@color/colorMyWhite"
+                        android:paddingBottom="7sp"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="10sp"
+                        android:paddingTop="8sp">
+
+                        <TextView
+                            android:id="@+id/txtIconBanedMembers_AdminFrg"
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:gravity="center"
+                            android:text="@string/fa_ban"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="@string/baned"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutMoments_AdminFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="0.5sp"
+                        android:background="@color/colorMyWhite"
+                        android:paddingBottom="7sp"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="10sp"
+                        android:paddingTop="8sp">
+
+                        <TextView
+                            android:id="@+id/txtIconMoments_AdminFrg"
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:gravity="center"
+                            android:text="@string/fa_chrome"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="@string/moments"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMyGray_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="71sp"
+                        android:gravity="left|center"
+                        android:paddingLeft="20sp"
+                        android:paddingTop="26sp"
+                        android:text="@string/shops"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="2px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="2px"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="17sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="18sp">
+
+                            <TextView
+                                android:id="@+id/txtIconShopsNumber_AdminFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_shopping_bag"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/shops"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtShopsNumber_AdminFrg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="120"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="17sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="18sp">
+
+                            <TextView
+                                android:id="@+id/txtIconProductsNumber_AdminFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_shopping_basket"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/products"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtProductsNumber_AdminFrg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="13456"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutShops_AdminFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:background="@color/colorMyWhite"
+                        android:paddingBottom="7sp"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="10sp"
+                        android:paddingTop="8sp">
+
+                        <TextView
+                            android:id="@+id/txtIconShops_AdminFrg"
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:gravity="center"
+                            android:text="@string/fa_shopping_bag"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="@string/shops"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutProducts_AdminFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="0.5sp"
+                        android:background="@color/colorMyWhite"
+                        android:paddingBottom="7sp"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="10sp"
+                        android:paddingTop="8sp">
+
+                        <TextView
+                            android:id="@+id/txtIconProducts_AdminFrg"
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:gravity="center"
+                            android:text="@string/fa_shopping_basket"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="@string/products"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutShopPageDesign_AdminFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="0.5sp"
+                        android:background="@color/colorMyWhite"
+                        android:paddingBottom="7sp"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="10sp"
+                        android:paddingTop="8sp">
+
+                        <TextView
+                            android:id="@+id/txtIconShopPageDesign_AdminFrg"
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:gravity="center"
+                            android:text="@string/fa_paint_brush"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="@string/shops_page_design"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMyGray_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="71sp"
+                        android:gravity="left|center"
+                        android:paddingLeft="20sp"
+                        android:paddingTop="26sp"
+                        android:text="@string/directories"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="2px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="2px"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="17sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="18sp">
+
+                            <TextView
+                                android:id="@+id/txtIconPlacesNumber_AdminFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_home"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/places"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtPlacesNumber_AdminFrg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="456"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorMyWhite"
+                            android:paddingBottom="17sp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="10sp"
+                            android:paddingTop="18sp">
+
+                            <TextView
+                                android:id="@+id/txtIconCitiesNumber_AdminFrg"
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:gravity="center"
+                                android:text="@string/fa_building_o"
+                                android:textColor="@color/colorMyGray_4"
+                                android:textSize="24sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/products"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtCitiesNumber_AdminFrg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="14"
+                                    android:textColor="@color/colorMyGray_10"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutPlaces_AdminFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:background="@color/colorMyWhite"
+                        android:paddingBottom="7sp"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="10sp"
+                        android:paddingTop="8sp">
+
+                        <TextView
+                            android:id="@+id/txtIconPlaces_AdminFrg"
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:gravity="center"
+                            android:text="@string/fa_home"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="Places(1)"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutDirectoriesPageDesign_AdminFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="0.5sp"
+                        android:background="@color/colorMyWhite"
+                        android:paddingBottom="7sp"
+                        android:paddingLeft="20sp"
+                        android:paddingRight="10sp"
+                        android:paddingTop="8sp">
+
+                        <TextView
+                            android:id="@+id/txtIconDirectoriesPageDesign_AdminFrg"
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:gravity="center"
+                            android:text="@string/fa_paint_brush"
+                            android:textColor="@color/colorMyRed"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="@string/directories_page_design"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

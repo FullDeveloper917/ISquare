@@ -1,0 +1,218 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.MyShopFragments.EditShopFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMyGray_2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:background="@color/colorMyGray_1"
+            android:layout_marginBottom="1sp">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_EditShopFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_EditShopFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/edit_shop_details"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9sp">
+
+                <Button
+                    android:id="@+id/btnSave_EditShopFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:background="@color/colorMyGray_1"
+                    android:text="@string/fa_floppy_o"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:orientation="vertical"
+            android:background="@color/colorMyGray_2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@color/colorMyWhite"
+                android:layout_marginTop="2px">
+
+                <TextView
+                    android:id="@+id/txtIconRegion_EditShopFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="@string/fa_globe"
+                    android:textColor="@color/colorMyGray_4"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:background="@color/colorMyWhite"/>
+
+                <Spinner
+                    android:id="@+id/spnRegion_EditShopFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:background="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorMyGray_4"
+                    android:paddingLeft="10sp"
+                    android:entries="@array/region_array"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@color/colorMyWhite"
+                android:layout_marginTop="2px">
+
+                <TextView
+                    android:id="@+id/txtIconState_EditShopFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="@string/fa_globe"
+                    android:textColor="@color/colorMyGray_4"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:background="@color/colorMyWhite"/>
+
+                <Spinner
+                    android:id="@+id/spnSate_EditShopFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:background="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorMyGray_4"
+                    android:paddingLeft="10sp"
+                    android:entries="@array/state_array"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorMyGray_2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@color/colorMyWhite"
+                android:layout_marginTop="2px">
+
+                <TextView
+                    android:id="@+id/txtIconDelivery_EditShopFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginBottom="7sp"
+                    android:text="@string/fa_truck"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:background="@color/colorMyWhite"/>
+
+                <Spinner
+                    android:id="@+id/spnDelivery_EditShopFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:background="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorMyGray_4"
+                    android:paddingLeft="10sp"
+                    android:entries="@array/delivery_array"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="183sp"
+                android:paddingLeft="20sp"
+                android:paddingTop="17sp"
+                android:paddingBottom="30sp"
+                android:paddingRight="30sp"
+                android:background="@color/colorMyWhite"
+                android:layout_marginTop="2px">
+
+                <TextView
+                    android:id="@+id/txtIconAddress_EditShopFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:text="@string/fa_map_marker"
+                    android:textColor="@color/colorMyGray_4"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:background="@color/colorMyWhite"/>
+
+                <TextView
+                    android:id="@+id/txtAddress_EditShopFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/sample_address"
+                    android:textColor="@color/colorMyGray_8"
+                    android:textSize="16sp"
+                    android:gravity="left"
+                    android:paddingTop="5sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="30sp"
+                    android:paddingBottom="30sp"
+                    android:background="@color/colorMyWhite"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

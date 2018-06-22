@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layoutWithdrawal_OneAdminWithdrawal"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="@color/colorMyWhite">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:text="ID 34567896: HK$ 450"
+            android:textColor="@color/colorMyGray_10"
+            android:textColorHint="@color/colorMyGray_7"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/txtProcessed_OneAdminWithdrawal"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="10sp"
+            android:text="@string/fa_spinner"
+            android:textColor="@color/colorMyRed"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+</LinearLayout>

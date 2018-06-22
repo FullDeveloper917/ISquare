@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.SettingsFragments.TextSizeFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutMain_TextSizeFrg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:layout_marginBottom="2px"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_TextSizeFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="9sp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_TextSizeFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_size"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/colorMyGray_2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/chat_member" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chat_bubble_receiver"
+                    android:gravity="left|center"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="10sp"
+                    android:text="Preview text size"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="50sp"
+                    android:layout_height="50sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:weightSum="1">
+
+                <View
+                    android:layout_width="50sp"
+                    android:layout_height="50sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chat_bubble_sender"
+                    android:gravity="left|center"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="20sp"
+                    android:paddingTop="10sp"
+                    android:text="Drag the block and change text size"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/chat_member" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:weightSum="1">
+
+                <View
+                    android:layout_width="50sp"
+                    android:layout_height="50sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chat_bubble_sender"
+                    android:gravity="left|center"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="20sp"
+                    android:paddingTop="10sp"
+                    android:text="Text size in chats, menus, moments, directories, shops will also change after settings."
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/chat_member" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="30sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

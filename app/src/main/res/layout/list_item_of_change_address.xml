@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutChangeAddress_OneAddressForChange"
+    android:layout_width="match_parent"
+    android:layout_height="119sp"
+    android:background="@color/colorMyWhite">
+
+    <TextView
+        android:id="@+id/txtIconAddress_OneAddressForChange"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="8sp"
+        android:background="@color/colorMyWhite"
+        android:gravity="center"
+        android:text="@string/fa_map_marker"
+        android:textColor="@color/colorMyGray_10"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@color/colorMyWhite"
+            android:gravity="left"
+            android:text="Unit 201, 2/F, Block A, Kerry TC Warehouse 1, 3 Kin Chuen Street, Kwai Chung, Hong Kong"
+            android:textColor="@color/colorMyGray_10"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18sp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorMyWhite"
+            android:gravity="center"
+            android:text="852 - 23457856, Denis"
+            android:textColor="@color/colorMyGray_10"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtIconChecked_OneAddressForChange"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_marginRight="10sp"
+        android:layout_gravity="center"
+        android:background="@color/colorMyWhite"
+        android:gravity="center"
+        android:text="@string/fa_pencil_square_o"
+        android:textColor="@color/colorMyGray_10"
+        android:textColorHint="@color/colorMyGray_7"
+        android:textSize="24sp" />
+
+</LinearLayout>

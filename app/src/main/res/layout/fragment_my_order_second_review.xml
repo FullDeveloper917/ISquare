@@ -1,0 +1,175 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.MyOrdersFragments.MyOrderSecondReviewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_MyOrderSecondReviewFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_MyOrderSecondReviewFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/review"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMyGray_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120sp"
+                    android:layout_marginBottom="19sp"
+                    android:layout_marginTop="2px"
+                    android:background="@color/colorMyWhite"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="120sp"
+                        android:layout_height="100sp"
+                        android:background="@color/colorMyGray_2"
+                        android:src="@drawable/raw_1505667297"
+                        android:scaleType="centerCrop"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15sp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20sp"
+                            android:layout_gravity="right"
+                            android:gravity="left|center"
+                            android:text="Armelle #102"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="27sp"
+                            android:layout_marginTop="-6sp"
+                            android:gravity="left|center"
+                            android:text="HK$ 900"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtStarMark_MyOrderSecondReviewFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@color/colorMyWhite"
+                    android:gravity="left|center"
+                    android:paddingLeft="15sp"
+                    android:text="@string/fa_five_star"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="245sp"
+                    android:background="@color/colorMyWhite"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="110sp"
+                        android:layout_margin="15sp"
+                        android:background="@drawable/textview_border"
+                        android:hint="@string/text_area"
+                        android:padding="10sp"
+                        android:text=""
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:background="@color/colorMyWhite">
+
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:layout_marginRight="10sp"
+                            android:src="@drawable/fake_image" />
+
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:layout_marginRight="10sp"
+                            android:src="@drawable/fake_image" />
+
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:layout_marginRight="10sp"
+                            android:src="@drawable/fake_image" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnPostAll_MyOrderSecondReviewFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="51sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginTop="18sp"
+                    android:layout_marginBottom="32sp"
+                    android:background="@drawable/red_button_border"
+                    android:text="@string/post_all"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+    
+</FrameLayout>

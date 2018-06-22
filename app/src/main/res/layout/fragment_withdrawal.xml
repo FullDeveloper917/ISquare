@@ -1,0 +1,436 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.MyWalletFragments.WithdrawalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_WithdrawalFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_WithdrawalFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/withdrawal"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMyGray_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="2px"
+                    android:layout_marginBottom="37sp"
+                    android:background="@color/colorMyWhite">
+
+                    <TextView
+                        android:id="@+id/txtIconAmount_WithdrawalFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="7sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_money"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/edtAmount_WithdrawalFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/amount"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textColorHint="@color/colorMyGray_7"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="2px"
+                    android:background="@color/colorMyWhite">
+
+                    <TextView
+                        android:id="@+id/txtIconRegion_WithdrawalFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="7sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_globe"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="24sp" />
+
+                    <Spinner
+                        android:id="@+id/spnRegion_WithdrawalFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:entries="@array/region_array"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="2px"
+                    android:background="@color/colorMyWhite">
+
+                    <TextView
+                        android:id="@+id/txtIconBankName_WithdrawalFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="7sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_university"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/edtBankName_WithdrawalFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/bank_name"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textColorHint="@color/colorMyGray_7"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="2px"
+                    android:background="@color/colorMyWhite">
+
+                    <TextView
+                        android:id="@+id/txtIconBankAddress_WithdrawalFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="7sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_map_marker"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/edtBankAddress_WithdrawalFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/bank_address"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textColorHint="@color/colorMyGray_7"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="2px"
+                    android:background="@color/colorMyWhite">
+
+                    <TextView
+                        android:id="@+id/txtIconSwift_WithdrawalFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="7sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_university"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/edtSwift_WithdrawalFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/swift"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textColorHint="@color/colorMyGray_7"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="2px"
+                    android:background="@color/colorMyWhite">
+
+                    <TextView
+                        android:id="@+id/txtIconAccountNumber_WithdrawalFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="7sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_shield"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/edtAccountNumber_WithdrawalFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/account_number"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textColorHint="@color/colorMyGray_7"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="2px"
+                    android:background="@color/colorMyWhite">
+
+                    <TextView
+                        android:id="@+id/txtIconFirstName_WithdrawalFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="7sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_info_circle"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/edtFirstName_WithdrawalFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/first_name"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textColorHint="@color/colorMyGray_7"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="2px"
+                    android:background="@color/colorMyWhite">
+
+                    <TextView
+                        android:id="@+id/txtIconGivenName_WithdrawalFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="7sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_info_circle"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/edtGivenName_WithdrawalFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/given_name"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textColorHint="@color/colorMyGray_7"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2px"
+                    android:background="@color/colorMyWhite">
+
+                    <TextView
+                        android:id="@+id/txtIconPhoneNumber_WithdrawalFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="7sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_mobile"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="24sp" />
+
+                    <Spinner
+                        android:id="@+id/spnPhoneNumber_WithdrawalFrg"
+                        android:layout_width="76sp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:entries="@array/phone_number_array"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edtPhoneNumber_WithdrawalFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/phone_number"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textColorHint="@color/colorMyGray_7"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2px"
+                    android:background="@color/colorMyWhite">
+
+                    <TextView
+                        android:id="@+id/txtIconEmail_WithdrawalFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginBottom="7sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_envelope_o"
+                        android:textColor="@color/colorMyGray_4"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/edtEmail_WithdrawalFrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/email"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textColorHint="@color/colorMyGray_7"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSendRequest_WithdrawalFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="26sp"
+                    android:layout_marginBottom="27dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/send_request"
+                    android:background="@drawable/red_button_border"
+                    android:textColor="@color/colorMyWhite"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

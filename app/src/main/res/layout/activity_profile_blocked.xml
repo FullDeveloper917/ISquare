@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain_ProfileBlocked"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.david.isquare.ProfileBlockedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/colorMyGray_1">
+
+        <TextView
+            android:id="@+id/txtIconRtn_ProfileBlocked"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="7sp"
+            android:gravity="center"
+            android:text="@string/fa_chevron_left"
+            android:textColor="@color/colorMyDarkBlue"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/colorMyGray_10"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMyGray_4">
+
+
+        <TextView
+            android:id="@+id/txtCheckMark"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:text="@string/fa_ban"
+            android:textColor="@color/colorMyRed"
+            android:textSize="24sp"
+            android:gravity="center"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.29"/>
+
+        <TextView
+            android:id="@+id/txtFirstSentence"
+            android:layout_width="wrap_content"
+            android:layout_height="23sp"
+            android:text="Profile: #567890567"
+            android:textColor="@color/colorMyGray_10"
+            android:textSize="14sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/txtCheckMark"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="23dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="23sp"
+            android:text="@string/was_blocked_successfully"
+            android:textColor="@color/colorMyGray_10"
+            android:textSize="14sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/txtFirstSentence"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

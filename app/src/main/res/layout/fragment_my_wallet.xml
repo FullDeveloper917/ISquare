@@ -1,0 +1,266 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.isquare.Fragments.MeFragments.MyWalletFragments.MyWalletFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:background="@color/colorMyGray_1">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn_MyWalletFrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="9sp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtIconRtn_MyWalletFrg"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:gravity="center"
+                    android:text="@string/fa_chevron_left"
+                    android:textColor="@color/colorMyDarkBlue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/my_wallet"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="9sp">
+
+                <Button
+                    android:id="@+id/btnGoPassword_MyWalletFrg"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:background="@color/colorMyGray_1"
+                    android:gravity="center"
+                    android:text="@string/fa_key"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="26sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMyGray_2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginBottom="33sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorMyWhite"
+                    android:paddingBottom="17sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="18sp">
+
+                    <TextView
+                        android:id="@+id/txtIconBalance_MyWalletFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:gravity="center"
+                        android:text="@string/fa_money"
+                        android:textColor="@color/colorMyDarkBlue"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/balance"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtBalance_UsersFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="HK$ 8802.56"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5sp"
+                    android:layout_weight="1"
+                    android:background="@color/colorMyWhite"
+                    android:paddingBottom="17sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="18sp">
+
+                    <TextView
+                        android:id="@+id/txtIconCommission_MyWalletFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:gravity="center"
+                        android:text="@string/fa_money"
+                        android:textColor="@color/colorMyRed"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Commission"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtCommission_UsersFrg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="HK$ 8802.56"
+                            android:textColor="@color/colorMyGray_10"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutWithdrawal_MyWalletFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:background="@color/colorMyWhite"
+                    android:paddingBottom="7sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8sp">
+
+                    <TextView
+                        android:id="@+id/txtIconWithdrawal_MyWalletFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:gravity="center"
+                        android:text="@string/fa_long_arrow_right"
+                        android:textColor="@color/colorMyRed"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:text="@string/withdrawal"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutDeposit_MyWalletFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="0.5sp"
+                    android:background="@color/colorMyWhite"
+                    android:paddingBottom="7sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8sp">
+
+                    <TextView
+                        android:id="@+id/txtIconDeposit_MyWalletFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:gravity="center"
+                        android:text="@string/fa_long_arrow_left"
+                        android:textColor="@color/colorMyRed"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:text="@string/deposit"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutTransactions_MyWalletFrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="0.5sp"
+                    android:background="@color/colorMyWhite"
+                    android:paddingBottom="7sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="8sp">
+
+                    <TextView
+                        android:id="@+id/txtIconTransactions_MyWalletFrg"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:gravity="center"
+                        android:text="@string/fa_exchange"
+                        android:textColor="@color/colorMyDarkBlue"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:text="@string/transactions"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorMyWhite"
+    android:layout_width="match_parent"
+    android:layout_height="115sp"
+    android:padding="10sp">
+
+    <ImageView
+        android:id="@+id/imgProduct_OneCartProduct"
+        android:layout_width="95sp"
+        android:layout_height="95sp"
+        android:background="@color/colorMyGray_7"
+        android:src="@drawable/fake_image"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:text="XXXXtitles"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="left|center"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnTrash_OneCartProduct"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_marginTop="-6sp"
+                android:text="@string/fa_trash_o"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="26sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtStarMark_OneCartProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/fa_five_star"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="18sp"
+                android:gravity="left|center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1021 comments"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="left|center"
+                android:paddingLeft="10sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_marginBottom="-5sp">
+
+                <TextView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:text="-"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="18sp"
+                    android:lines="1"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:text="1"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="16sp"
+                    android:lines="1"
+                    android:gravity="center"/>
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:text="+"
+                    android:textColor="@color/colorMyBlack"
+                    android:textSize="14sp"
+                    android:lines="1"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:text="HK$ 345"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="16sp"
+                android:gravity="right|center"
+                android:paddingLeft="10sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

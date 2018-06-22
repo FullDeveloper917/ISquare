@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layoutMain_OneAdminMoments"
+    android:background="@color/colorMyGray_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66sp"
+                android:background="@color/colorMyWhite">
+
+                <LinearLayout
+                    android:id="@+id/layoutPartner_OneAdminMoments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="44sp"
+                        android:layout_height="44sp"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="13sp"
+                        android:src="@drawable/raw_1485072577"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="44sp"
+                        android:layout_marginLeft="4sp"
+                        android:layout_marginTop="13sp"
+                        android:gravity="left|center"
+                        android:text="ARMELLE ASIA"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnMenu_OneAdminMoments"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/fa_bars"
+                    android:textColor="@color/colorMyGray_10"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgMoment_OneAdminMoments"
+                android:layout_width="match_parent"
+                android:layout_height="360sp"
+                android:background="@color/colorMyWhite"
+                android:scaleType="centerCrop"
+                android:src="@drawable/list_item_sample_of_moment1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginBottom="1sp"
+                android:background="@color/colorMyWhite">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btnLove_OneAdminMoments"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_heart_o"
+                        android:textColor="@color/colorMyGray_6"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btnComment_OneAdminMoments"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_commenting_o"
+                        android:textColor="@color/colorMyGray_6"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btnStar_OneAdminMoments"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:background="@color/colorMyWhite"
+                        android:gravity="center"
+                        android:text="@string/fa_star"
+                        android:textColor="@color/colorMyGray_6"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="16sp"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/txtIconLikes_OneAdminMoments"
+                        android:layout_width="19sp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="6sp"
+                        android:gravity="center"
+                        android:text="@string/fa_caret_right"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="74 likes"
+                        android:textColor="@color/colorMyGray_10"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1sp"
+                android:background="@color/colorMyWhite"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5sp"
+                    android:text="NEW FRAGMENTS. HOLIDAY GIFT GUIDE"
+                    android:textColor="@color/colorMyGray_10" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5sp"
+                    android:text="How to buy best gift for any holidya, we will tell you our special secrets"
+                    android:textColor="@color/colorMyGray_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:background="@color/colorMyWhite"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5sp"
+                    android:text="3 hours ago"
+                    android:textColor="@color/colorMyGray_10" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMenu_OneAdminMoments"
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10sp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@drawable/menu_first_border">
+
+                <LinearLayout
+                    android:id="@+id/layoutMenuDelete_OneAdminMoments"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/fa_trash_o"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45sp"
+                        android:text="@string/delete"
+                        android:textColor="@color/colorMyWhite"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMenuBanProfile_OneAdminMoments"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/menu_common_border">
+
+                <TextView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="5sp"
+                    android:text="@string/fa_ban"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45sp"
+                    android:text="@string/ban_profile"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
